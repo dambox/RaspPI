@@ -34,7 +34,7 @@ longitude = latlong_response[0]["lon"]
 URL_WEATHER = URL_WEATHER % (latitude, longitude, API_KEY)
 weather_response = requests.get(URL_WEATHER).json()
 #
-# Get the temperature and see if cold, warm or hot
+# Get the temperature and see if cold, warm or hot twt
 #
 def temp():
     current_temperature = weather_response["current"]["temp"]
