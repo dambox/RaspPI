@@ -29,7 +29,7 @@ latlong_response = requests.get(URL_LATLONG).json()
 latitude = latlong_response[0]["lat"]
 longitude = latlong_response[0]["lon"]
 #
-# Get the temperature using the Latitude and Longitude from open weather..
+# Get the temperature using the Latitude and Longitude from open weather.
 #
 URL_WEATHER = URL_WEATHER % (latitude, longitude, API_KEY)
 weather_response = requests.get(URL_WEATHER).json()
